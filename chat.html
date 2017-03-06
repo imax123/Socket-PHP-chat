@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script>
+        <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+        <script src="client.js"></script>
+    <link href="style.css" rel="stylesheet" >
+</head>
+<body>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    <div class="col-md-12 col-lg-6">
+        <div class="panel">
+        	<!--Heading-->
+    		<div class="panel-heading">
+    			<h3 class="panel-title">Chat</h3>
+    		</div>
+    
+    		<!--Widget body-->
+    		<div id="demo-chat-body" class="collapse in">
+    			<div class="nano has-scrollbar" style="height:380px">
+    				<div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+    					<ul class="list-unstyled media-block " id="msdBlock">
+    						
+    					</ul>
+    				</div>
+    			<div class="nano-pane"><div class="nano-slider" style="height: 141px; transform: translate(0px, 0px);"></div></div></div>
+    
+    			<!--Widget footer-->
+    			<div class="panel-footer">
+                    <form  method="POST" id="msgForm" >
+    				<div class="row">
+    					<div class="col-md-9">
+                            <div class="text_area">
+    						  <input type="text" placeholder="Enter your text" class="form-control chat-input" id= "message" >
+    					    </div>
+                        </div>
+    					<div class="col-md-3">
+    						<button class="btn btn-primary btn-block" type="submit">Send</button>
+    					</div>
+    				</div>
+                  </form>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</div>
+</body>
+</html>

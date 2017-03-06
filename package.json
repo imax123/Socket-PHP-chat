@@ -1,0 +1,21 @@
+{
+  "name": "chat-room",
+  "version": "0.0.1",
+  "description": "This chat is built on php using node cosket.io program",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "keywords": [
+    "node",
+    "socket.io",
+    "php",
+    "jquery"
+  ],
+  "author": "Aman kumar",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.14.0",
+    "socket.io": "~1.7.2"
+  }
+}
